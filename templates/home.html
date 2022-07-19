@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Pincode</th>
+          <th scope="col">Blood Group</th>
+        print(users)
+
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in users %}
+        print(users)
+        <tr>
+          <th scope="row">{{ forloop.counter }}</th>
+          <td>{{i.user}}</td>
+          <td>{{i.pincode}}</td>
+          <td>{{i.blood_group}}</td>
+
+        </tr>
+        {% endfor %}
+
+      </tbody>
+
+</table>
+
+{% endblock %}
+

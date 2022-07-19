@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+<div class="container">
+    
+    <h3 class="text-center">All Blood Requests</h3>
+    <br>
+    <!-- {{request_sessions}} -->
+    <table class="table table-sm table-bordered">
+      <tr class="table-success">
+        <th>req_user</th>
+        <th>pincode</th>
+        <th>total_unit</th>
+        <th>req_date</th>
+        <th>till_date </th>
+        <th>blood_groups</th>
+        <th>status</th>
+      </tr>
+      {% for session in request_sessions %}
+        <tr>
+          <td>{{session.req_user}}</td>
+          <td>{{session.pincode}}</td>
+          <td>{{session.total_unit}}</td>
+          <td>{{session.req_date}}</td>
+          <td>{{session.till_date}}</td>
+          <td>{{session.blood_groups}}</td>
+          <td><button type="button" class="btn"><a href="{% url 'view_detail' %}">View Status</a></button></td>
+
+
+        </tr>
+      {% endfor %}
+    </table>
+    
+{% endblock %}
