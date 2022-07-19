@@ -5,7 +5,7 @@
 - The matchmaking is done via many filters like pin code, blood group and time slot availability.
 
 
-## Run Locally for windows
+## Run Locally 
 
 
 ### Clone the project
@@ -18,12 +18,12 @@
 ### Create Environment
 
 ```bash
-  python3 -m venv env
+  python -m venv env
 ```
 ### Activate Environment(env)
 
 ```bash
-  $ env/Scripts/activate
+  env/Scripts/activate
 ```
 
 
@@ -31,24 +31,24 @@
 
 
 ```bash
- $ pip3 install -r requrements.txt
+ pip install -r requrements.txt
 ```
 
 ## Database Migrations
 
 
 ```bash
- $ python manage.py makemigrations
+ python manage.py makemigrations
 
 ```
 ```bash
- $ python manage.py migrate
+ python manage.py migrate
 ```
 
 ## Run Server
 
 ```bash
-$ python manage.py runserver
+python manage.py runserver
 ```
 
 
