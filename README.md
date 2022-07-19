@@ -5,7 +5,7 @@
 - The matchmaking is done via many filters like pin code, blood group and time slot availability.
 
 
-## Run Locally 
+## Run Locally for windows
 
 
 ### Clone the project
