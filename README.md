@@ -31,7 +31,7 @@
 
 
 ```bash
- pip install -r requrements.txt
+ pip install -r requirements.txt
 ```
 
 ## Database Migrations
